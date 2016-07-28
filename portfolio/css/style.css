@@ -1,0 +1,179 @@
+body {
+	margin: 0;
+	font-family: 'Zeyada', cursive;
+	background-image: url("window.png");
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: 50% 40%;
+}
+
+header {
+	padding: 0px;
+}
+
+.styledText {
+	/*color:#808080;*/
+	color: black;
+	letter-spacing: 2px;
+	font-size: 20px;
+	text-align: center;
+
+}
+
+.social-icons li {
+	list-style-type: none;
+	display: inline;
+	padding-right: 20px;
+}
+
+.social-icons {
+	position: fixed;
+	top: 80%;
+	left: 50%;
+	transform: translate(-60%, -50%);
+}
+
+.social-icons a {
+	color:#808080;
+}
+
+.social-icons a:hover, .social-icons a:active {
+	color:black;
+}
+
+/* ---------------------------    NAVIGATION BAR    ------------------------------- */
+.navbar {
+	margin-top: 25px;
+	margin-left: 80px;
+	margin-right: 100px;
+	padding-left: 0px;
+
+	border-style: solid;
+}
+
+.menu a {
+	text-decoration: none;
+	color:#808080;
+}
+.menu a:hover, .menu a:active {
+	color:black;
+}
+
+#amy {
+	display: inline;
+	font-size: 50px;
+	color: black;
+}
+
+.menu li {
+	list-style-type: none;
+	display: inline;
+}
+
+.float-right {
+	float: right;
+	display: inline;
+	font-size: 25px;
+	padding-top: 25px;
+} 
+
+.float-right li {
+	margin-right: 20px;
+}
+
+/*----------- let's add some media queries to the navbar ---------------*/
+
+@media screen and (max-width: 560px) {
+	.styledText {
+		font-size: 14px;
+	}
+
+
+	/*.navbar .float-right {
+		font-size: 18px;
+		float: left;
+	}
+	.navbar #amy {
+		text-align: left;
+		display: block;
+		font-size: 35px;
+	}
+
+	.navbar {
+		position: fixed;
+		margin-top: 40px;
+	}*/
+}
+/*
+@media screen and (max-width: 860px) {
+	.navbar {
+		margin-left: 40px;
+	}
+}*/
+
+@media screen and (max-width: 730px) {
+	.navbar .float-right {
+		margin-top: -20px;
+		padding-top: 0;
+		float: left;
+
+	}
+	.navbar #amy {
+		text-align: left;
+		display: block;
+
+	}
+
+	.navbar {
+		border-style: solid;
+		margin-left: auto;
+		margin-right: auto;
+	}
+}
+
+/*---------- Some animation on screen --------------*/
+
+@-webkit-keyframes fadeIn {
+	from {opacity: 0;} to {opacity: 1;}
+}
+@-moz-keyframes fadeIn {
+	from {opacity: 0;} to {opacity: 1;}
+}
+@keyframes fadeIn {
+	from {opacity: 0;} to {opacity: 1;}
+}
+
+.home .fadebox {
+	position: fixed;
+	top: 70%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	opacity: 0;
+	-webkit-animation: fadeIn ease-in 1;
+	-moz-animation: fadeIn ease-in 1;
+	-animation: fadein ease-in 1;
+
+	/* This next step is to makes sure animation ends on last keyframe */
+	-webkit-animation-fill-mode: forwards;
+	-moz-animation-fill-mode: forwards;
+	-animation-fill-mode: forwards;
+
+	-webkit-animation-duration: 2s;
+	-moz-animation-duration: 2s;
+	-animation-duration: 2s;
+
+}
+
+/* ---------------- footer ------------------- */
+.foot {
+	padding-top: 5px;
+	text-align: center;
+	font-size: 10px;
+	font-family: 'roboto', sans-serif;
+	height: 25px;
+
+	position: fixed;
+	top: 95%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
